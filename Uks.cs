@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hoone
 {
-    public class Uks : Hoone
+    public class Uks
     {
         
         //public string Color { get; set; }

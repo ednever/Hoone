@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hoone
 {
-    public class Sein : Hoone
+    public class Sein
     {
         //public string Color { get; set; }
 

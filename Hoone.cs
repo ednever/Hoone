@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Hoone
 {
-    abstract class Hoone : Inimene
+    abstract class Hoone
     {
-        public abstract void Kes_ma_olen();
+
     }
+    public abstract void Kes_ma_olen { }
 }
