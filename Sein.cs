@@ -8,15 +8,15 @@ namespace Hoone
 {
     public class Sein
     {
-        //public string Color { get; set; }
+        public string Color { get; set; }
 
-        //public Sein(string color)
-        //{
-        //    Color = color;
-        //}
-        //public void NaitaInfo()
-        //{
-        //    Console.WriteLine($"Mina olen sein, minu värv on {Color}");
-        //}
+        public Sein(string color)
+        {
+            Color = color;
+        }
+        public void NaitaInfo()
+        {
+            Console.WriteLine($"Mina olen sein, minu värv on {Color}");
+        }
     }
 }

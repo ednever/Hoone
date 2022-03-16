@@ -8,40 +8,36 @@ namespace Hoone
 {
     public class EraMaja : Hoone
     {
-        //string suurus;
-        //int pindala;
-        //public EraMaja(int Pindala)
-        //{
-        //    pindala = Pindala;
-        //}
-        //public int Suurus
-        //{
-        //    set
-        //    {
-        //        pindala = value;
-        //        if (pindala < 50)
-        //        {
-        //            suurus = "vaike maja";
-        //        }
-        //        else if (pindala < 100)
-        //        {
-        //            suurus = "keskmine maja";
-        //        }
-        //        else if (pindala < 150)
-        //        {
-        //            suurus = "suur maja";
-        //        }
-        //        else
-        //        {
-        //            suurus = "liiga suur maja";
-        //        }
-        //    }
-        //    get { return pindala; }
-        //}
-        //public void NaitaInfo()
-        //{
-        //    Console.WriteLine($"Mina olen maja, minu pindala on {pindala} m2");
-        //    Console.WriteLine($"Ma olen {suurus}");
-        //}
+        public EraMaja(int pindala = 50) : base(pindala)
+        {
+        }
+        public string Suurus
+        {
+            get
+            {
+                var suurus = "";
+                if (Pindala <= 25)
+                {
+                    suurus = "vaike maja";
+                }
+                else if (Pindala <= 50)
+                {
+                    suurus = "keskmine maja";
+                }
+                else if (Pindala <= 100)
+                {
+                    suurus = "suur maja";
+                }
+                else
+                {
+                    suurus = "liiga suur maja";
+                }
+                return suurus;
+            }
+        }
+        public void NaitaINFO()
+        {
+            Console.WriteLine("Minu maja suurus on {0}", Suurus);
+        }
     }
 }

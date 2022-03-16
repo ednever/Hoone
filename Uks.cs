@@ -8,16 +8,15 @@ namespace Hoone
 {
     public class Uks
     {
-        
-        //public string Color { get; set; }
+        public string Color { get; set; }
 
-        //public Uks(string color)
-        //{
-        //    Color = color;
-        //}
-        //public void NaitaInfo()
-        //{
-        //    Console.WriteLine($"Mina olen uks, minu värv on {Color}");
-        //}
+        public Uks(string color = "sinine")
+        {
+            Color = color;
+        }
+        public void NaitaInfo()
+        {
+            Console.WriteLine($"Mina olen uks, minu värv on {Color}");
+        }
     }
 }

@@ -19,9 +19,20 @@ namespace Hoone
 
             //mees.NaitaInfo();
 
+
+            EraMaja majake = new EraMaja();
+            Inimene mees = new Inimene("Juku");
+            majake.uks = new Uks("must");
+            majake.sein = new Sein("valge");
+            majake.NaitaINFO();
+            mees.hoone = majake;
+            mees.NaitaInfo();
+            
+
             Console.ReadLine();
         }
     }
+}
     //abstract class I
     //{
     //    string name;
@@ -54,5 +65,6 @@ namespace Hoone
     //    {
     //        Console.WriteLine("Ma olen õpetaja!");
     //    }
-    }
-}
+        
+    //    }
+    //}
